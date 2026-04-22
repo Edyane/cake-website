@@ -37,7 +37,28 @@ const scrollHeader = () =>{
 window.addEventListener('scroll', scrollHeader)
 
 /*=============== HOME SWIPER ===============*/
-
+const swiperHome = new Swiper('.home__swiper', {
+    loop: true,
+    grabCursor: true,
+    speed: 800,
+    effect: 'creative',
+    creativeEffect: {
+        prev: {
+            translate: ['-120%', 0, -500],
+            rotate: [0, 0, -45],
+            opacity: 0,
+        },
+        next: {
+            translate: ['120%', 0, -500],
+            rotate: [0, 0, 45],
+            opacity: 0,
+        },
+    },
+    autoplay: {
+        delay: 3000,
+        disableInteraction: false,
+    }
+});
 
 /*=============== CHANGE HEADER STYLES ===============*/
 
