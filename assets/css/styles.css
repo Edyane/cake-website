@@ -470,6 +470,20 @@ img {
 }
 
 /*=============== PRODUCTS SECTION ===============*/
+.product__button {
+  background-color: var(--white-color);
+  color: var(--title-color);
+  padding: .5rem;
+  box-shadow: 0 4px 24px hsla(350, 70%, 20%, .1);
+  font-weight: 600;
+  font-size: var(--small-font-size);
+  border-radius: 4rem;
+  cursor: pointer;
+}
+
+.product__button:hover {
+  background-color: var(--first-color);
+}
 
 
 /* Swiper class */
