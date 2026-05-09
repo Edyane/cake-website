@@ -485,7 +485,20 @@ img {
   background-color: var(--first-color);
 }
 
+.product__cards {
+  display: grid;
+  gap: 1.5rem;
+}
 
+.product__card {
+  position: relative;
+  background-color: var(--container-color);
+  padding: 14rem 1.5rem 2rem;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  box-shadow: 0 8px 16px hsla(350, 70%, 20%, .1); 
+  transition: transform .4s;
+}
 /* Swiper class */
 
 
