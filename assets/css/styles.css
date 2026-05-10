@@ -534,6 +534,24 @@ img {
   font-size: var(--bigger-font-size);
   font-weight: var(--font-bold); 
 }
+
+.product__buy {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 1rem;
+  right: 1rem;
+  background-color: var(--first-color);
+  color: var(--title-color);
+  font-size: 1.5rem;
+  border-radius: .75rem;
+  box-shadow: 0 4px 16px hsla(350, 70%, 65%, .3);
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  transition: background-color .4s;
+}
+
 /* Swiper class */
 
 
