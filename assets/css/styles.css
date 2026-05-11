@@ -552,6 +552,14 @@ img {
   transition: background-color .4s;
 }
 
+.product__buy:hover {
+  background-color: var(--first-color-alt);
+}
+
+.product__card:hover,
+.product__card:hover .product__img {
+  transform: translate(-.5rem);
+}
 /* Swiper class */
 
 
