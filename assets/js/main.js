@@ -28,13 +28,13 @@ const linkAction = () => {
 navLink.forEach((n) => n.addEventListener("click", linkAction));
 
 /*=============== CHANGE HEADER STYLES ===============*/
-const scrollHeader = () => {
+function scrollHeader() {
   const header = document.getElementById("header");
   // Add the .scroll-header class if the bottom scroll of the viewport is greater than 50
   this.scrollY >= 50
     ? header.classList.add("scroll-header")
     : header.classList.remove("scroll-header");
-};
+}
 window.addEventListener("scroll", scrollHeader);
 
 /*=============== HOME SWIPER ===============*/
@@ -62,16 +62,28 @@ const swiperHome = new Swiper(".home__swiper", {
 });
 
 /*=============== CHANGE HEADER STYLES ===============*/
-const scrollHeader = () => {
+function scrollHeader() {
   const header = document.getElementById("header");
   // Add the .scroll-header class if the bottom scroll of the viewport is greater than 50
   this.scrollY >= 50
     ? header.classList.add("scroll-header")
     : header.classList.remove("scroll-header");
-};
+}
 window.addEventListener("scroll", scrollHeader);
 
 /*=============== PRODUCTS SWIPER ===============*/
+const swiperTabs = new Swiper(".product__tabs", {
+  slidesPerView: "auto",
+  watchSlidesProgress: true,
+  slideToClickedSlide: true,
+});
+
+const swiperProducts = new Swiper(".product__content", {
+  spaceBetween: 32,
+  thumbs: {
+    swiper: swiperTabs,
+  },
+});
 
 /*=============== NEW SWIPER ===============*/
 
